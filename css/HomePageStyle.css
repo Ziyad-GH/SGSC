@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    
+    object-fit: fill;
+    
+  }
+
+  
+  .container .content {
+    transition: all 100ms;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: bold;
+    width: 80%;
+  }
+  
+  .container .content h1 {
+    margin : 0.5px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #58b4be;
+    text-shadow: 10px 5px 10px rgba(0,0,0,0.2) ;
+
+  }
+  
+  .container .content p {
+    margin : 1px 0;
+    font-size: 1.1rem;
+    color: #58b4be;
+    text-shadow:0 5px 10px rgba(0,0,0,0.2) 
+    
+  }
+  
+  .buttons button {
+    font-weight: bold;
+    background-color: #43949d;
+    color: rgb(19, 18, 18);
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    padding: 10px 0px;
+    width: 7.5rem;
+    margin:   20px 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    
+    
+  }
+  
+  .opacity{
+    position: absolute;
+    z-index: 5;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(15, 15, 15,0.5);
+  }
+  
+  @media (min-width: 768px) {
+    .bg-img {
+        content: url('../img/bg.jpg');
+    }
+
+    .container .content {
+     width: fit-content;
+     padding: 20px;
+     border-radius: 30px;
+    }
+    .container .content h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #43949d;
+      text-shadow:0 5px 10px rgba(0,0,0,0.2) ;
+  
+    }
+    .container .content p {
+      margin : 1px 0;
+      font-size: 1.5rem;
+      color: #58b4be;
+      text-shadow:0 5px 10px rgba(0,0,0,0.2) 
+      
+    }
+    .buttons button :hover{
+      background-color: #ffffff;
+    }
+    
+
+}
